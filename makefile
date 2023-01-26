@@ -6,7 +6,7 @@ all : $(all)
 
 $(all) : curve.h
 
-libcurve.so : CXXFLAGS += -shared
+libcurve.so : CXXFLAGS += -shared -fPIC
 
 demos : libcurve.so
 
