@@ -1,0 +1,17 @@
+1. The centre of a circle coincides with the origin.
+   The axes of an ellipse and of a helix lie on the coordinate axes.
+   A helix is right-handed and intersects the X-axis.
+
+2. An optional command-line argument provides the seed
+   for the random number generator.
+
+3. The program additionally outputs
+   the names of the curves, along with the points and derivatives;
+   the non-increasing sequence of the circles' radii;
+   the sum of the circles' radii.
+
+4. By using the makefile, there hopefully produced the library and
+   two versions of the program, dynamically (demos) and statically (demo)
+   linked to the library.
+
+5. The bundle is intended for using in a GNU framework.
