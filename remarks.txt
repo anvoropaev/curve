@@ -6,18 +6,24 @@
 2. The second container aggregates the syntactic circles.
    It will omit the ellipses with axes of the same length.
 
-3. An optional command-line argument for the main program
-   provides the seed for the random number generator.
-
-4. The main program additionally outputs
+3. The demo program additionally outputs
    the names of the curves, along with the points and derivatives;
    the non-increasing sequence of the circles' radii;
    the sum of the circles' radii.
 
-5. By using the makefile, there hopefully produced the library
-   and two versions of the main program, demos and demo,
-   dynamically and statically linked to the library.
+4. In the omp program, the sum of radii is computed using the OpenMP facility.
+   The container of circles is directly constructed. All the radii equal one.
 
-6. The files libcurve.so.cpp and demos.cpp are symbolic links
-   to curve.cpp and to demo.cpp purposed at building
-   libcurve.so and demos via implicit make rules.
+5. The demo and the omp programs accept optional command-line arguments,
+   as the seed for the random number generator and the number of circles
+   respectively.
+
+6. By using the makefile, there hopefully produced the shared library
+   and two versions of the programs, demos/demo and omps/omp,
+   dynamically/statically linked to the library.
+
+7. The files libcurve.so.cpp, demos.cpp, and omps.cpp are symbolic links
+   to curve.cpp, demo.cpp, and omp.cpp purposed at building
+   libcurve.so, demos, and omps via implicit make rules.
+
+8. The makefile is to be used in a GNU framework.

@@ -1,6 +1,6 @@
 CXXFLAGS = -std=c++17
 
-all = libcurve.so demos demo
+all = libcurve.so demos demo omps omp
 
 all : $(all)
 
@@ -8,8 +8,10 @@ $(all) : curve.h
 
 libcurve.so : CXXFLAGS += -shared -fPIC
 
-demos : libcurve.so
+demos omps : libcurve.so
 
-demos : LDFLAGS = -L. -lcurve
+demos omps : LDFLAGS = -L. -lcurve
 
-demo : curve.cpp
+demo omp : curve.cpp
+
+omps omp : CXXFLAGS += -fopenmp
