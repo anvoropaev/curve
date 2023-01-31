@@ -18,12 +18,7 @@
    as the seed for the random number generator and the number of circles
    respectively.
 
-6. By using the makefile, there hopefully produced the shared library
-   and two versions of the programs, demos/demo and omps/omp,
-   dynamically/statically linked to the library.
+6. By using the makefile, there hopefully produced
+   the shared library and the main programs, demo and omp.
 
-7. The files libcurve.so.cpp, demos.cpp, and omps.cpp are symbolic links
-   to curve.cpp, demo.cpp, and omp.cpp purposed at building
-   libcurve.so, demos, and omps via implicit make rules.
-
-8. The makefile is to be used in a GNU framework.
+7. The makefile is to be used in a GNU framework.
